@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyClassesBeginner", "UdemyClassesBeginner\UdemyClassesBeginner.csproj", "{5ADE5A95-2965-46AC-B21B-F6E1AA2C0842}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyClassesBeginner_Tests", "UdemyClassesBeginner_Tests\UdemyClassesBeginner_Tests.csproj", "{35425748-CB4B-4D2A-95C0-327758C3F043}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5ADE5A95-2965-46AC-B21B-F6E1AA2C0842} = {5ADE5A95-2965-46AC-B21B-F6E1AA2C0842}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

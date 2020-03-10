@@ -10,11 +10,4 @@ namespace UdemyClassesBeginner
         }
     }
 
-    public class Test
-    {
-        public void Siema()
-        {
-            Console.WriteLine("Eluwina");
-        }
-    }
 }
