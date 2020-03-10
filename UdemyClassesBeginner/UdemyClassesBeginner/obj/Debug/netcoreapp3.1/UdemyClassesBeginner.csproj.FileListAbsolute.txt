@@ -1,0 +1,11 @@
+C:\Users\wikto\Desktop\Programowanie\C#\CSh Beginner\UdemyCShClassesBeginner\UdemyClassesBeginner\UdemyClassesBeginner\bin\Debug\netcoreapp3.1\UdemyClassesBeginner.exe
+C:\Users\wikto\Desktop\Programowanie\C#\CSh Beginner\UdemyCShClassesBeginner\UdemyClassesBeginner\UdemyClassesBeginner\bin\Debug\netcoreapp3.1\UdemyClassesBeginner.deps.json
+C:\Users\wikto\Desktop\Programowanie\C#\CSh Beginner\UdemyCShClassesBeginner\UdemyClassesBeginner\UdemyClassesBeginner\bin\Debug\netcoreapp3.1\UdemyClassesBeginner.runtimeconfig.json
+C:\Users\wikto\Desktop\Programowanie\C#\CSh Beginner\UdemyCShClassesBeginner\UdemyClassesBeginner\UdemyClassesBeginner\bin\Debug\netcoreapp3.1\UdemyClassesBeginner.runtimeconfig.dev.json
+C:\Users\wikto\Desktop\Programowanie\C#\CSh Beginner\UdemyCShClassesBeginner\UdemyClassesBeginner\UdemyClassesBeginner\bin\Debug\netcoreapp3.1\UdemyClassesBeginner.dll
+C:\Users\wikto\Desktop\Programowanie\C#\CSh Beginner\UdemyCShClassesBeginner\UdemyClassesBeginner\UdemyClassesBeginner\bin\Debug\netcoreapp3.1\UdemyClassesBeginner.pdb
+C:\Users\wikto\Desktop\Programowanie\C#\CSh Beginner\UdemyCShClassesBeginner\UdemyClassesBeginner\UdemyClassesBeginner\obj\Debug\netcoreapp3.1\UdemyClassesBeginner.csprojAssemblyReference.cache
+C:\Users\wikto\Desktop\Programowanie\C#\CSh Beginner\UdemyCShClassesBeginner\UdemyClassesBeginner\UdemyClassesBeginner\obj\Debug\netcoreapp3.1\UdemyClassesBeginner.AssemblyInfoInputs.cache
+C:\Users\wikto\Desktop\Programowanie\C#\CSh Beginner\UdemyCShClassesBeginner\UdemyClassesBeginner\UdemyClassesBeginner\obj\Debug\netcoreapp3.1\UdemyClassesBeginner.AssemblyInfo.cs
+C:\Users\wikto\Desktop\Programowanie\C#\CSh Beginner\UdemyCShClassesBeginner\UdemyClassesBeginner\UdemyClassesBeginner\obj\Debug\netcoreapp3.1\UdemyClassesBeginner.dll
+C:\Users\wikto\Desktop\Programowanie\C#\CSh Beginner\UdemyCShClassesBeginner\UdemyClassesBeginner\UdemyClassesBeginner\obj\Debug\netcoreapp3.1\UdemyClassesBeginner.pdb

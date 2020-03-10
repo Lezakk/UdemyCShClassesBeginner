@@ -6,7 +6,13 @@ namespace UdemyClassesBeginner
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var john = new Person();
+            john.FirstName = "John";
+            john.LastName = "Smith";
+            john.Age = 20;
+
+            john.Introduce();
+
         }
     }
 
