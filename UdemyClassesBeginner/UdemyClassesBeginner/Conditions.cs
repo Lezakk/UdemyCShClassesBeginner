@@ -47,5 +47,12 @@ namespace UdemyClassesBeginner
             var result = height > width ? "Portrait" : "Landscape";
             return result;
         }
+
+        public int HowManyPoints(int velocity)
+        {
+            return velocity / 5;
+        }
+
+        
     }
 }

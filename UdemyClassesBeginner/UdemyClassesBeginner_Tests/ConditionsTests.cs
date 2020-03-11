@@ -62,5 +62,14 @@ namespace UdemyClassesBeginner_Tests
             var result = thirdEx.LandscapeOrPortrait(5, 10);
             Assert.That(result, Does.Contain("Landscape"));
         }
+
+        [Test]
+        public void FourthEx_HowManyPoints_ReturnsNumberOfPoints()
+        {
+            var fourthEx = new Conditions();
+            var result = fourthEx.HowManyPoints(40);
+            Assert.That(result, Is.EqualTo(8));
+
+        }
     }
 }
