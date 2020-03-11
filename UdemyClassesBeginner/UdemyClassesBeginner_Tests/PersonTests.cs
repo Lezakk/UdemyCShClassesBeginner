@@ -10,7 +10,7 @@ namespace UdemyClassesBeginner_Tests
     [TestFixture]
     class PersonTests
     {
-        [Test]
+        
 
     }
 }
