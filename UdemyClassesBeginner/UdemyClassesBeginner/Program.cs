@@ -7,7 +7,7 @@ namespace UdemyClassesBeginner
         static void Main(string[] args)
         {
             var count = new Iteration();
-            count.SumOfEnteredNumbers();
+            Console.WriteLine(count.Fractional(6));
         }
     }
 

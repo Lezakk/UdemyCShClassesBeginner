@@ -30,5 +30,15 @@ namespace UdemyClassesBeginner
             }
             Console.WriteLine(result);
         }
+
+        public int Fractional(int i)
+        {
+            int result = 1;
+            if (i>0)
+            {
+                result = i * Fractional(i - 1);
+            }
+            return result;
+        }
     }
 }

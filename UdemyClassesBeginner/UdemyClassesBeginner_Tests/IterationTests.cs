@@ -17,5 +17,14 @@ namespace UdemyClassesBeginner_Tests
             var result = firstEx.HowManyNumbersBetween(range);
             Assert.That(result, Is.EqualTo(resultNum));
         }
+
+        [TestCase(5,120)]
+        [TestCase(3,6)]
+        public void IterationThirdEx_Fractional_ReturnsFractionalOfGivenNumer(int num, int fracResult)
+        {
+            var thirdEx = new Iteration();
+            var result = thirdEx.Fractional(num);
+            Assert.That(result, Is.EqualTo(fracResult));
+        }
     }
 }
