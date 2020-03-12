@@ -64,12 +64,41 @@ namespace UdemyClassesBeginner_Tests
         }
 
         [Test]
-        public void FourthEx_HowManyPoints_ReturnsNumberOfPoints()
+        public void HowManyPoints_GivenNumberIsGreaterThanZero_ReturnsNumberOfPoints()
+        {
+            var result = Conditions.HowManyPoints(40);
+            Assert.That(result, Is.EqualTo(8));
+        }
+
+        [TestCase(0)]
+        [TestCase(-4)]
+        public void HowManyPoints_GivenNumberIsLessOrEqualZero_ReturnsZero(int number) 
+        {
+            var result = Conditions.HowManyPoints(number);
+            Assert.That(result, Is.EqualTo(0));
+        }
+
+        [Test]
+        public void FourthEx_VelocityUnderSpeedLimit_ResultOk()
         {
             var fourthEx = new Conditions();
-            var result = fourthEx.HowManyPoints(40);
-            Assert.That(result, Is.EqualTo(8));
+            var result = fourthEx.WhatsWrongPoliceman(50, 40);
+            Assert.That(result, Does.Contain("Ok"));
+        }
 
+        [Test]
+        public void FourthEx_VelocityOverSpeedLimitAndPointUnderTwelve_ResultPoint()
+        {
+            var fourthEx = new Conditions();
+            var result = fourthEx.WhatsWrongPoliceman(50, 60);
+            Assert.That(result, Does.Contain("2"));
+        }
+        [Test]
+        public void FourthEx_VelocityOverSpeedLimitAndPointOverTwelve_ResultPoint()
+        {
+            var fourthEx = new Conditions();
+            var result = fourthEx.WhatsWrongPoliceman(50, 110);
+            Assert.That(result, Does.Contain("License Suspended"));
         }
     }
 }

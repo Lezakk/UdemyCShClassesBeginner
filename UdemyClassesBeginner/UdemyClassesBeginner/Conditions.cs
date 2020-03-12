@@ -48,11 +48,20 @@ namespace UdemyClassesBeginner
             return result;
         }
 
-        public int HowManyPoints(int velocity)
+        public static int HowManyPoints(int velocity)
         {
-            return velocity / 5;
+            return velocity > 0 ? velocity/5 : 0;
         }
 
-        
+        public string WhatsWrongPoliceman(int speedLimit, int velocity)
+        {
+            var points = Conditions.HowManyPoints(velocity - speedLimit);
+            if (points == 0) return "Ok";
+            else if (points > 0 && points < 12) return points.ToString();
+            else return "License Suspended";
+
+        }
+
+
     }
 }
