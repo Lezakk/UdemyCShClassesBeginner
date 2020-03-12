@@ -40,5 +40,22 @@ namespace UdemyClassesBeginner
             }
             return result;
         }
+
+        public static void GuessGame()
+        {
+            var random = new Random();
+            int num = random.Next(1, 10);
+            for (int i = 0; i < 5; i++)
+            {
+                int guessedNum = int.Parse(Console.ReadLine());
+                if (num == guessedNum)
+                {
+                    Console.WriteLine("Gratulacje");
+                    break;
+                }
+                else Console.WriteLine("Spróbuj jeszcze raz!");
+            }
+
+        }
     }
 }
