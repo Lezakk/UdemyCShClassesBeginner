@@ -6,9 +6,8 @@ namespace UdemyClassesBeginner
     {
         static void Main(string[] args)
         {
-            var test = new Iteration();
-            
-            Console.WriteLine(test.HowManyNumbersBetween(1000));
+            var count = new Iteration();
+            count.SumOfEnteredNumbers();
         }
     }
 

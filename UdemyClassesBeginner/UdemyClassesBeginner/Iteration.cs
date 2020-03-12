@@ -15,5 +15,20 @@ namespace UdemyClassesBeginner
             }
             return count;
         }
+        public void SumOfEnteredNumbers()
+        {
+            int result = 0;
+            while (true)
+            {
+                Console.WriteLine("Enter number:");
+                var input = Console.ReadLine();
+                if (input == "ok")
+                {
+                    break;
+                }
+                else result += int.Parse(input);
+            }
+            Console.WriteLine(result);
+        }
     }
 }
