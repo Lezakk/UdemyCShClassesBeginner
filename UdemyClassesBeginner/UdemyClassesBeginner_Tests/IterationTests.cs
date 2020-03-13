@@ -26,5 +26,13 @@ namespace UdemyClassesBeginner_Tests
             var result = thirdEx.Fractional(num);
             Assert.That(result, Is.EqualTo(fracResult));
         }
+
+        [Test]
+        public void IterationFivethEx_GivenArray_ReturnsBiggestNum()
+        {
+            var fivthEx = new Iteration();
+            var result = fivthEx.BiggestNumInArr(new int[] { 4, 1, 5, 2, 6 });
+            Assert.That(result, Is.EqualTo(6));
+        }
     }
 }

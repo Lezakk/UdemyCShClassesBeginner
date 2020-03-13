@@ -57,5 +57,18 @@ namespace UdemyClassesBeginner
             }
 
         }
+
+        public int BiggestNumInArr(int[] arr)
+        {
+            int big = 0;
+            foreach (var item in arr)
+            {
+                if (item > big)
+                {
+                    big = item;
+                }
+            }
+            return big;
+        }
     }
 }
