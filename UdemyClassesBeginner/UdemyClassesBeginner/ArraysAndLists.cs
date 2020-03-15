@@ -51,6 +51,26 @@ namespace UdemyClassesBeginner
             }
 
         }
+        public static void ContunouslyEnterNumersToListUntilQuit()
+        {
+            List<int> list = new List<int>();
+            List<int> uniqueList = new List<int>();
+            while (true)
+            {
+                var input = Console.ReadLine();
+                if (input == "Quit") break;
+                else list.Add(int.Parse(input));
+
+            }
+            foreach (var item in list)
+            {
+                if (uniqueList.IndexOf(item) == -1) uniqueList.Add(item);
+            }
+            foreach (var item in uniqueList)
+            {
+                Console.Write(item + " ");
+            }
+        }
     }
 
 }

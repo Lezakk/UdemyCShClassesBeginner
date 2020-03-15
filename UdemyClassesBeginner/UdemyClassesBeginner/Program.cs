@@ -6,7 +6,7 @@ namespace UdemyClassesBeginner
     {
         static void Main(string[] args)
         {
-            ArraysAndLists.EnterFiveNum();
+            ArraysAndLists.ContunouslyEnterNumersToListUntilQuit();
         }
     }
 
