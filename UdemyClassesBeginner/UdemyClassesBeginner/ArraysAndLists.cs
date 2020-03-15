@@ -30,6 +30,27 @@ namespace UdemyClassesBeginner
             }
             return result;
         }
+        public static void EnterFiveNum()
+        {
+            int[] arr = new int[5];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                int input = int.Parse(Console.ReadLine());
+                if (Array.IndexOf(arr, input) == -1) arr[i] = input;
+                else
+                {
+                    Console.WriteLine("You already put this numer into array");
+                    i--;
+                }
+                
+            }
+            Array.Sort(arr);
+            foreach (var item in arr)
+            {
+                Console.Write(item);
+            }
+
+        }
     }
 
 }
