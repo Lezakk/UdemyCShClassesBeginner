@@ -14,8 +14,16 @@ namespace UdemyClassesBeginner_Tests
         public void Text_Consecutive_WhenConsecutiveStringPassed_ReturnsMessageConsecutive(string consecutiveText)
         {
             var text = new Text();
-            var result = text.Concecutive(consecutiveText);
+            var result = text.Consecutive(consecutiveText);
             Assert.That(result, Does.Contain("Consecutive"));
+        }
+        [TestCase("1-2-2-4-5")]
+        [TestCase("9-10-7-6-5")]
+        public void Text_Consecutive_WhenNotConsecutiveStringPassed_ReturnsMessageNotConsecutive(string consecutiveText)
+        {
+            var text = new Text();
+            var result = text.Consecutive(consecutiveText);
+            Assert.That(result, Does.Contain("Not Consecutive"));
         }
     }
 }
