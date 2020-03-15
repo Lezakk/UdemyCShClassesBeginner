@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace UdemyClassesBeginner
 {
@@ -36,6 +37,14 @@ namespace UdemyClassesBeginner
             }
             if (notConsecutiveFlag > 0) return "Not Consecutive";
             else return "Consecutive";
+        }
+
+        public string HyphenNumbers(string numbers)
+        {
+            if (String.IsNullOrEmpty(numbers)) return "Exit";
+            List<string> input = new List<string>(numbers.Split('-'));
+            if (input.Count != input.Distinct().Count()) return "Duplicates";
+            else return "Good";
         }
     }
 }

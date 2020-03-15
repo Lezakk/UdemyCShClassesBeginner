@@ -25,5 +25,27 @@ namespace UdemyClassesBeginner_Tests
             var result = text.Consecutive(consecutiveText);
             Assert.That(result, Does.Contain("Not Consecutive"));
         }
+
+        [TestCase("1-2-3-4-5")]
+        public void Text_HyphenNumbers_WhenThereAreNotDuplicates_ReturnsGood(string numbers)
+        {
+            var text = new Text();
+            var result = text.HyphenNumbers(numbers);
+            Assert.That(result, Does.Contain("Good"));
+        }
+        [TestCase("1-2-2-4-5")]
+        public void Text_HyphenNumbers_WhenThereAreDuplicates_ReturnsDuplicates(string numbers)
+        {
+            var text = new Text();
+            var result = text.HyphenNumbers(numbers);
+            Assert.That(result, Does.Contain("Duplicates"));
+        }
+        [TestCase("")]
+        public void Text_HyphenNumbers_WhenThereAreNotImput_ReturnsDuplicates(string numbers)
+        {
+            var text = new Text();
+            var result = text.HyphenNumbers(numbers);
+            Assert.That(result, Does.Contain("Exit"));
+        }
     }
 }
