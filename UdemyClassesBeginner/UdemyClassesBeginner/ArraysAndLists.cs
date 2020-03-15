@@ -71,6 +71,32 @@ namespace UdemyClassesBeginner
                 Console.Write(item + " ");
             }
         }
+        public static void Fiveth()
+        {
+            while (true)
+            {
+                Console.WriteLine("Input comma separated numbers");
+                string input = Console.ReadLine();
+                if (input.Length == 0 || input.IndexOf(',') == -1) continue;
+                List<string> charList = new List<string>(input.Split(','));
+                if (charList.Count < 5) continue;
+                List<int> numList = new List<int>();
+                foreach (var item in charList)
+                {
+                    if (!string.IsNullOrEmpty(item))
+                    {
+                        numList.Add(int.Parse(item)); 
+                    }
+                }
+                numList.Sort();
+                for (int i = 0; i < 3; i++)
+                {
+                    Console.Write(numList[i] + " ");
+                }
+            }
+
+            
+        }
     }
 
 }
