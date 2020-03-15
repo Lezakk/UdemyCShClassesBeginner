@@ -46,5 +46,14 @@ namespace UdemyClassesBeginner
             if (input.Count != input.Distinct().Count()) return "Duplicates";
             else return "Good";
         }
+
+        public string ValidTime(string time)
+        {
+            if(String.IsNullOrEmpty(time)) return "Invalid Time";
+            int hours = int.Parse(time.Substring(0, 2));
+            int minutes = int.Parse(time.Substring(3));
+            if (hours >= 0 && hours < 24 && minutes >= 0 && minutes < 60) return "Ok";
+            else return "Invalid Time";
+        }
     }
 }

@@ -47,5 +47,24 @@ namespace UdemyClassesBeginner_Tests
             var result = text.HyphenNumbers(numbers);
             Assert.That(result, Does.Contain("Exit"));
         }
+        [TestCase("19:00")]
+        [TestCase("21:37")]
+        [TestCase("04:20")]
+        public void Text_ValidTime_WhenCorrectTimeFormatPassed_ReturnOk(string time)
+        {
+            var text = new Text();
+            var result = text.ValidTime(time);
+            Assert.That(result, Does.Contain("Ok"));
+        }
+        [TestCase("24:00")]
+        [TestCase("45:37")]
+        [TestCase("04:70")]
+        [TestCase("")]
+        public void Text_ValidTime_WhenIncorrectTimeFormatOrNullPassed_ReturnInvalidTime(string time)
+        {
+            var text = new Text();
+            var result = text.ValidTime(time);
+            Assert.That(result, Does.Contain("Invalid Time"));
+        }
     }
 }
