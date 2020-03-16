@@ -9,6 +9,14 @@ namespace UdemyClassesBeginner_Tests
     [TestFixture]
     class TextTests
     {
+        private Text _text;
+        [SetUp]
+        public void SetUp()
+        {
+            _text = new Text();
+        }
+
+
         [TestCase("1-2-3-4-5")]
         [TestCase("9-8-7-6-5")]
         public void Text_Consecutive_WhenConsecutiveStringPassed_ReturnsMessageConsecutive(string consecutiveText)
@@ -67,12 +75,21 @@ namespace UdemyClassesBeginner_Tests
             Assert.That(result, Does.Contain("Invalid Time"));
         }
 
-        [TestCase]
+        [Test]
         public void Text_PascalCase_WhenStringWithSpacesAndLowerCasePassed_ReturndPascalCaseOfString()
         {
             var text = new Text();
             var result = text.PascalCase("witam SERDeczNIE");
             Assert.That(result, Does.Contain("WitamSerdecznie"));
         }
+
+        [Test]
+        public void Text_CountVovels_WhenWordPassed_ReturnNumberOfVovels()
+        {
+            var result = _text.CountVovels("Black cat jumped over the fence");
+            Assert.That(result, Is.EqualTo(9));
+        }
+
+
     }
 }

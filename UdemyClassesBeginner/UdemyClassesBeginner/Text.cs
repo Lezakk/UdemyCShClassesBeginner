@@ -70,5 +70,16 @@ namespace UdemyClassesBeginner
             return strBuilder.ToString();
 
         }
+
+        public int CountVovels(string text)
+        {
+            char[] vovels = new char[6] { 'a', 'e', 'i', 'o', 'u', 'y' };
+            int counter = 0;
+            foreach (var letter in text)
+            {
+                if (vovels.Contains(letter)) counter++;
+            }
+            return counter;
+        }
     }
 }
