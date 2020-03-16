@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
+
 namespace UdemyClassesBeginner
 {
     public class Text
@@ -54,6 +55,20 @@ namespace UdemyClassesBeginner
             int minutes = int.Parse(time.Substring(3));
             if (hours >= 0 && hours < 24 && minutes >= 0 && minutes < 60) return "Ok";
             else return "Invalid Time";
+        }
+
+        public string PascalCase(string text)
+        {
+            StringBuilder strBuilder = new StringBuilder();
+            List<string> singleWords = new List<string>(text.Split(' '));
+            foreach (var word in singleWords)
+            {
+                strBuilder.Append(word.Substring(0,1).ToUpper());
+                strBuilder.Append(word.Substring(1).ToLower());
+                Console.WriteLine(strBuilder);
+            }
+            return strBuilder.ToString();
+
         }
     }
 }

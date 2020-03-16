@@ -66,5 +66,13 @@ namespace UdemyClassesBeginner_Tests
             var result = text.ValidTime(time);
             Assert.That(result, Does.Contain("Invalid Time"));
         }
+
+        [TestCase]
+        public void Text_PascalCase_WhenStringWithSpacesAndLowerCasePassed_ReturndPascalCaseOfString()
+        {
+            var text = new Text();
+            var result = text.PascalCase("witam SERDeczNIE");
+            Assert.That(result, Does.Contain("WitamSerdecznie"));
+        }
     }
 }
